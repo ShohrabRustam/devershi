@@ -1,174 +1,148 @@
-# Shohrab Rustam | Portfolio
+# Devarshi Kothari | Portfolio
 
-A clean, professional portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features a minimal design inspired by modern software engineering portfolios.
+A clean, professional portfolio website for Devarshi Kothari, Software Developer specializing in backend systems and microservices. Built with pure HTML, CSS, and JavaScript.
 
-![Portfolio Preview](https://img.shields.io/badge/Next.js-14.x-black?style=for-the-badge&logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?style=for-the-badge&logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.x-38bdf8?style=for-the-badge&logo=tailwind-css)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## ✨ Features
+## 👨‍💻 About Devarshi
 
-- **Professional Design**: Clean, minimal aesthetic with dark blue theme
-- **Fully Responsive**: Works seamlessly across all devices
-- **Performance Optimized**: Built with Next.js for excellent performance
-- **SEO Ready**: Optimized metadata and structure
-- **Easy to Customize**: Well-organized, readable code
-- **Modern Stack**: React 18, Next.js 14, TypeScript 5
+Software Developer with 2+ years of experience building scalable backend systems in the fintech domain. Skilled in:
+- Java, Spring Boot, Microservices
+- Apache Kafka, PostgreSQL, MySQL, Redis
+- AWS (EC2, S3, Lambda, CloudWatch)
+- Distributed Systems & Event-Driven Architecture
 
 ## 🚀 Quick Start
 
-### Prerequisites
+Simply open `index.html` in your browser or host it on any static hosting service.
 
-- Node.js 18+ installed
-- npm or yarn package manager
-
-### Installation
-
-1. Clone the repository:
+### Local Development
 ```bash
+# Clone the repository
 git clone https://github.com/ShohrabRustam/devershi.git
 cd devershi
-```
 
-2. Install dependencies:
-```bash
-npm install
+# Open in browser
+open index.html
 # or
-yarn install
+python3 -m http.server 8000
 ```
 
-3. Run the development server:
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+Then visit http://localhost:8000
 
 ## 📁 Project Structure
 
 ```
 devershi/
-├── app/
-│   ├── globals.css          # Global styles with CSS variables
-│   ├── layout.tsx           # Root layout with metadata
-│   └── page.tsx             # Home page
-├── components/
-│   ├── Navbar.tsx           # Navigation bar
-│   ├── Hero.tsx             # Hero section with intro
-│   ├── About.tsx            # About section
-│   ├── Experience.tsx       # Work experience timeline
-│   ├── Projects.tsx         # Project showcase
-│   ├── Skills.tsx           # Skills tags
-│   ├── Contact.tsx          # Contact information
-│   └── Footer.tsx           # Footer
-├── tailwind.config.ts       # Tailwind configuration
-├── tsconfig.json            # TypeScript configuration
-└── package.json             # Dependencies
+├── index.html          # Main HTML file
+├── css/
+│   └── style.css      # Styles
+├── js/
+│   └── script.js      # JavaScript functionality
+├── assets/            # Images, resume, etc.
+└── README.md
 ```
 
-## 🎨 Customization
+## ✨ Features
+
+- **Professional Design**: Clean, modern design with blue gradient theme
+- **Fully Responsive**: Works on desktop, tablet, and mobile
+- **Smooth Animations**: Fade-in effects and hover animations
+- **Contact Form**: Integrated contact form with mailto functionality
+- **Resume Download**: Downloadable PDF resume
+- **Performance**: Fast loading with vanilla JavaScript
+
+## 🎨 Sections
+
+1. **Hero** - Introduction with key stats (2+ years experience, 60% recovery increase, 250+ problems solved)
+2. **About** - Professional summary and contact information
+3. **Experience** - Work history at mpokket and Webveins Media
+4. **Projects** - Key projects including:
+   - Waiver Management Service (60% recovery increase)
+   - Collection Loan Management System
+   - AI-Powered Waiver Chatbot
+5. **Skills** - Technical skills categorized by type
+6. **Contact** - Contact form and social links
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3 (with CSS Grid and Flexbox)
+- Vanilla JavaScript
+- Font Awesome Icons
+- Google Fonts (System fonts fallback)
+
+## 📝 Customization
 
 ### Update Personal Information
 
-The portfolio uses a clean, professional design. Here's what to customize:
-
-1. **Hero Section** (`components/Hero.tsx`):
-   - Update your name, title, and tech stack
-   - Modify the core focus points
-   - Change the introduction text
-
-2. **About Section** (`components/About.tsx`):
-   - Update your bio and experience details
-
-3. **Experience Section** (`components/Experience.tsx`):
-   - Add your actual work experience
-   - Include company names, roles, and descriptions
-
-4. **Projects Section** (`components/Projects.tsx`):
-   - Replace with your real projects
-   - Add descriptions that highlight your impact
-
-5. **Skills Section** (`components/Skills.tsx`):
-   - Update the skills array with your technologies
-
-6. **Contact Section** (`components/Contact.tsx`):
-   - Update email, phone, and location
+1. **index.html** - Update name, title, description, and all content
+2. **css/style.css** - Modify colors in `:root` variables
+3. **js/script.js** - Update email address and console logs
+4. **assets/** - Add your resume PDF and profile photo
 
 ### Color Scheme
 
-The portfolio uses CSS variables defined in `app/globals.css`:
+Colors are defined as CSS variables in `style.css`:
 
 ```css
 :root {
-  --bg: #07111f;           /* Main background */
-  --bg-soft: #0f1d31;      /* Secondary background */
-  --text: #f5f7fb;         /* Primary text */
-  --muted: #9fb0c8;        /* Secondary text */
-  --accent: #7c9cff;       /* Blue accent */
-  --accent-2: #34d399;     /* Green accent */
-  --border: rgba(255,255,255,0.12);
+    --primary-color: #1e40af;     /* Main blue */
+    --secondary-color: #1e3a8a;   /* Dark blue */
+    --accent-color: #2563eb;      /* Light blue */
+    --gold-accent: #f59e0b;       /* Gold highlights */
+    --text-dark: #0f172a;         /* Text color */
+    --text-light: #475569;        /* Secondary text */
 }
 ```
 
-Modify these values to change the color scheme.
+## 🌐 Deployment
 
-## 🛠️ Tech Stack
+### GitHub Pages
+1. Go to repository Settings
+2. Navigate to Pages
+3. Select `main` branch as source
+4. Your site will be live at `https://shohrabrustam.github.io/devershi/`
 
-- **Framework**: [Next.js 14](https://nextjs.org/)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Font**: [Inter](https://fonts.google.com/specimen/Inter)
-
-## 📦 Build for Production
-
-Create an optimized production build:
-
+### Netlify
 ```bash
-npm run build
-npm start
+# Install Netlify CLI
+npm install -g netlify-cli
+
+# Deploy
+netlify deploy --prod
 ```
 
-## 🚀 Deployment
+### Vercel
+```bash
+# Install Vercel CLI
+npm install -g vercel
 
-### Deploy to Vercel (Recommended)
+# Deploy
+vercel --prod
+```
 
-The easiest way to deploy your Next.js app is to use [Vercel](https://vercel.com):
+## 📄 Key Achievements
 
-1. Push your code to GitHub
-2. Import your repository to Vercel
-3. Vercel will automatically detect Next.js and configure the build settings
-4. Click deploy!
+- 2nd rank in Bug Raid Conquest by Seven Chats
+- 250+ coding problems solved across platforms
+- Published research paper on sentiment analysis
+- B.E. Computer Science with 8.5 CGPA
+- 60% increase in recovery rates through Waiver Management Service
 
-### Deploy to Other Platforms
+## 📧 Contact
 
-You can also deploy to:
-- [Netlify](https://www.netlify.com/)
-- [AWS](https://aws.amazon.com/)
-- [DigitalOcean](https://www.digitalocean.com/)
-- Any platform that supports Node.js
+- **Email**: kotharidev243@gmail.com
+- **Phone**: +91 93093 55393
+- **Location**: Bengaluru, India
+- **LinkedIn**: [in/kotharidev](https://linkedin.com/in/kotharidev)
 
-## 📄 License
+## 📜 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/ShohrabRustam/devershi/issues).
-
-## 💬 Support
-
-If you have any questions or need help, feel free to reach out:
-
-- Email: your.email@example.com
-- LinkedIn: [Shohrab Rustam](https://linkedin.com/in/shohrabrustam)
-- GitHub: [@ShohrabRustam](https://github.com/ShohrabRustam)
-
-## ⭐ Show your support
-
-Give a ⭐️ if you like this project!
-
 ---
 
-Made with ❤️ by Shohrab Rustam
+Made with ❤️ by Devarshi Kothari
