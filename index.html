@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Devarshi Kothari - Backend Software Developer with 2.5+ years experience in Java, Spring Boot, Microservices, Kafka">
+    <meta name="description" content="Devarshi Kothari - Backend Software Developer with 2.5+ years building scalable microservices in fintech using Java 21, Spring Boot, Kafka, PostgreSQL, MySQL, Redis, AWS. Visionary Innovator Award recipient.">
     <meta name="keywords" content="Java Developer, Spring Boot, Microservices, Backend Engineer, Software Developer">
     <title>Devarshi Kothari | Software Developer</title>
     <!-- Modular CSS Files -->
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/experience.css">
     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/achievements.css">
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -31,6 +32,7 @@
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
+                <a href="#achievements">Achievements</a>
                 <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -52,9 +54,12 @@
                     <i class="fas fa-code"></i> Java • Spring Boot • Microservices • Fintech Systems
                 </div>
                 <p class="hero-description">
-                    Backend Software Developer with 2.5+ years of experience building scalable, event-driven microservices in the fintech domain. 
-                    Owned business-critical platforms including loan restructuring orchestration, waiver engine, and collections CRM backend. 
-                    Recipient of the mPokket Visionary Innovator Award. Strong in distributed systems, workflow orchestration, and system design.
+                    Backend Software Developer with 2.5+ years of experience building scalable, event-driven microservices in the fintech 
+                    domain using Java 21, Spring Boot, Apache Kafka, PostgreSQL, MySQL, Redis, and AWS. Owned business-critical platforms 
+                    across loan collections and repayments, including a loan restructuring orchestration service, a rule-driven waiver engine, 
+                    and a collections CRM backend. Recipient of the mPokket Visionary Innovator Award for delivering the Part Payment feature 
+                    and contributing to a Lift & Shift migration that reduced infrastructure cost by ~20%. Strong in distributed systems, 
+                    workflow orchestration, system design, and cross-team technical ownership.
                 </p>
                 <div class="hero-stats">
                     <div class="stat">
@@ -138,7 +143,15 @@
                     </div>
                     <div class="info-item">
                         <i class="fas fa-graduation-cap"></i>
-                        <span>B.E. Computer Science (CGPA: 8.5)</span>
+                        <span>B.E. Computer Science and Engineering</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-university"></i>
+                        <span>Visvesvaraya Technological University (2019-2023)</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-star"></i>
+                        <span>CGPA: 8.5</span>
                     </div>
                     <a href="assets/resume.pdf" class="btn btn-primary" download>
                         <i class="fas fa-download"></i> Download Resume
@@ -218,12 +231,17 @@
                     <p>
                         Designed and developed a Loan Restructuring orchestration service that consolidates multiple active loans into a 
                         single restructured loan, owning the end-to-end customer journey from eligibility to completion. Built the Collection 
-                        Loan Orchestrate Service as the central workflow orchestrator, maintaining state and progression across user eligibility, 
-                        consent, underwriting, disbursement, upfront fee payment, and final completion. Designed an event-driven architecture 
-                        with Apache Kafka to orchestrate workflows across Analytics, Underwriting, Disbursement, Repayment, App, and Collection 
-                        systems. Defined inbound and outbound Kafka event flows with standardized event types, correlation IDs, event versioning, 
-                        retry handling, and idempotent processing; hardened with Dead Letter Topics (DLT), structured logging, and end-to-end 
-                        request correlation.
+                        Loan Orchestrate Service as the central workflow orchestrator, maintaining the state and progression of every journey 
+                        across user eligibility, consent, underwriting, disbursement, upfront fee payment, and final completion, with validated 
+                        transitions that prevent invalid state changes. Designed an event-driven architecture with Apache Kafka to orchestrate 
+                        workflows across Analytics, Underwriting, Disbursement, Repayment, App, and Collection systems, reducing dependency on 
+                        synchronous service-to-service communication. Defined inbound and outbound Kafka event flows with standardized event 
+                        types, correlation IDs, event versioning, retry handling, and idempotent processing; hardened with Dead Letter Topics 
+                        (DLT), structured logging, and end-to-end request correlation. Modelled PostgreSQL schemas for restructuring offers, 
+                        workflow status, and audit tracking, and developed REST APIs consumed by the App via the Repayment Internal BFF for 
+                        restructuring status and user consent. Owned the backend architecture and technical design — service design, database 
+                        schema, Kafka architecture, API and event contracts — collaborating with six cross-functional teams to define integration 
+                        boundaries.
                     </p>
                     <div class="project-tech">
                         <span>Java 21</span>
@@ -354,6 +372,63 @@
                             <span>Waivers</span>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements & Awards</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Visionary Innovator Award</h3>
+                    <p class="achievement-org">mPokket (Q1 FY26)</p>
+                    <p>
+                        Recognized for delivering key backend enhancements for the Part Payment feature, playing a significant 
+                        role in the Lift & Shift migration of the Collection Module, Admin API, and Salaried services, and 
+                        contributing to a ~20% reduction in infrastructure cost, while ensuring a smooth and stable production rollout.
+                    </p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>2nd Rank - Bug Raid Conquest</h3>
+                    <p class="achievement-org">Seven Chats</p>
+                    <p>
+                        Secured 2nd rank in Bug Raid Conquest, demonstrating strong debugging, analytical thinking, 
+                        and problem-solving skills in a competitive environment.
+                    </p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>250+ Coding Problems Solved</h3>
+                    <p class="achievement-org">Multiple Platforms</p>
+                    <p>
+                        Solved 250+ coding problems across multiple platforms, strengthening expertise in data structures 
+                        and algorithms, and building a strong foundation for technical problem-solving.
+                    </p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Final Year Project Team Lead</h3>
+                    <p class="achievement-org">University Project</p>
+                    <p>
+                        Led and coordinated the final-year project team, managing collaboration, task allocation, and 
+                        delivery of project milestones with successful completion.
+                    </p>
                 </div>
             </div>
         </div>
