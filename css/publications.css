@@ -1,0 +1,107 @@
+/* Publications Section */
+.publications {
+    padding: 100px 0;
+    background: var(--bg-light);
+}
+
+.publications-list {
+    margin-top: 50px;
+}
+
+.publication-card {
+    background: var(--bg-white);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    display: flex;
+    gap: 30px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.publication-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-color);
+}
+
+.publication-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+.publication-content {
+    flex: 1;
+}
+
+.publication-card h3 {
+    font-size: 1.3rem;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.publication-journal {
+    font-size: 1rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.publication-details {
+    font-size: 0.95rem;
+    color: var(--text-medium);
+    margin-bottom: 15px;
+}
+
+.publication-description {
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .publications {
+        padding: 70px 0;
+    }
+
+    .publications-list {
+        margin-top: 30px;
+    }
+
+    .publication-card {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .publication-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+
+    .publication-card h3 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .publication-journal,
+    .publication-details,
+    .publication-description {
+        text-align: center;
+    }
+}
