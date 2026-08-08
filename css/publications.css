@@ -1,6 +1,6 @@
 /* Publications Section */
 .publications {
-    padding: 100px 0;
+    padding: 90px 0;
     background: var(--bg-light);
 }
 
@@ -9,34 +9,59 @@
 }
 
 .publication-card {
-    background: var(--bg-white);
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: var(--shadow);
-    border: 1px solid var(--border-color);
+    background: white;
+    padding: 2.5rem;
+    border-radius: 24px;
+    box-shadow: 0 8px 28px rgba(30, 64, 175, 0.1);
+    border: 1px solid rgba(30, 64, 175, 0.1);
     display: flex;
-    gap: 30px;
-    transition: all 0.3s ease;
-    margin-bottom: 20px;
+    gap: 2rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.publication-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary-color), var(--gold-accent));
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .publication-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--accent-color);
+    transform: translateY(-6px);
+    box-shadow: 0 16px 44px rgba(30, 64, 175, 0.18);
+    border-color: rgba(30, 64, 175, 0.2);
+}
+
+.publication-card:hover::before {
+    opacity: 1;
 }
 
 .publication-icon {
     flex-shrink: 0;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    border-radius: 12px;
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 24px;
+    font-size: 2rem;
+    box-shadow: 0 8px 24px rgba(30, 64, 175, 0.35);
+    transition: all 0.3s ease;
+}
+
+.publication-card:hover .publication-icon {
+    transform: scale(1.08) rotate(3deg);
+    box-shadow: 0 12px 32px rgba(30, 64, 175, 0.45);
 }
 
 .publication-content {
@@ -44,9 +69,9 @@
 }
 
 .publication-card h3 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: var(--text-dark);
-    margin-bottom: 12px;
+    margin-bottom: 1rem;
     font-weight: 700;
     line-height: 1.4;
 }
@@ -55,20 +80,20 @@
     font-size: 1rem;
     color: var(--accent-color);
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
     font-style: italic;
 }
 
 .publication-details {
     font-size: 0.95rem;
     color: var(--text-medium);
-    margin-bottom: 15px;
+    margin-bottom: 1.2rem;
 }
 
 .publication-description {
     font-size: 1rem;
     color: var(--text-light);
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
 /* Responsive Design */
@@ -83,19 +108,16 @@
 
     .publication-card {
         flex-direction: column;
-        padding: 30px 20px;
-        gap: 20px;
+        padding: 2rem;
+        gap: 1.5rem;
     }
 
     .publication-icon {
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
         margin: 0 auto;
     }
 
     .publication-card h3 {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
         text-align: center;
     }
 
